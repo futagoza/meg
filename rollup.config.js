@@ -1,10 +1,8 @@
 import babel from 'rollup-plugin-babel'
 import babelrc from 'babelrc-rollup'
 
-const moduleName = moduleId = 'meg'
-
 const target = ( dest, format ) => {
-  return { dest, format, moduleId, moduleName }
+  return { dest, format, moduleId: 'meg', moduleName: 'meg' }
 }
 
 var options = {
