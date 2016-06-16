@@ -24,9 +24,11 @@
   "main": "lib/meg.js",
   "bin": "bin/meg",
   "scripts": {
+    "lint": "eslint lib test",
     "test": "mocha"
   },
   "devDependencies": {
+    "eslint": "2.11.1",
     "mocha": "2.5.3"
   },
   "engines": {
