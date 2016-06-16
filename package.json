@@ -23,6 +23,12 @@
 
   "main": "lib/meg.js",
   "bin": "bin/meg",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "2.5.3"
+  },
   "engines": {
     "node": ">= 4.0.0"
   }

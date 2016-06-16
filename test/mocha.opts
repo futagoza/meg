@@ -1,0 +1,4 @@
+--ui qunit
+--reporter spec
+--timeout 25000
+--recursive
