@@ -1,0 +1,29 @@
+{
+  "name": "meg",
+  "version": "0.0.0",
+  "description": "Meta language + PEG grammar = Any language",
+  "keywords": [
+    "meta",
+    "peg",
+    "grammar",
+    "macro",
+    "pre-processor",
+    "jit",
+    "javascript",
+    "c",
+    "generator",
+    "ecmascript",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/futagoza/meg",
+  "repository": "futagoza/meg",
+  "bugs": "https://github.com/futagoza/meg/issues",
+  "license": "MIT",
+  "author": "Futago-za Ryuu <futagoza.ryuu@gmail.com>",
+
+  "main": "lib/meg.js",
+  "bin": "bin/meg",
+  "engines": {
+    "node": ">= 4.0.0"
+  }
+}
