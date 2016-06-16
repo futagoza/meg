@@ -21,15 +21,31 @@
   "license": "MIT",
   "author": "Futago-za Ryuu <futagoza.ryuu@gmail.com>",
 
-  "main": "lib/meg.js",
+  "main": "index.js",
+  "browser": "dist/meg-umd-es5.js",
+  "jsnext:main": "dist/meg-src-es6.js",
   "bin": "bin/meg",
   "scripts": {
     "lint": "eslint lib test",
-    "test": "mocha"
+    "prebuild": "npm run lint",
+    "build": "npm run build:es5 && npm run build:es6",
+    "build:es5": "rollup --environment es5 -c",
+    "build:es6": "rollup --environment es6 -c",
+    "watch:es5": "rollup -w --environment es5 -c",
+    "watch:es6": "rollup -w --environment es6 -c",
+    "test": "mocha",
+    "prepublish": "npm test"
   },
   "devDependencies": {
+    "babel-eslint": "6.0.4",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-es2015-rollup": "1.1.1",
+    "babel-register": "6.9.0",
+    "babelrc-rollup": "1.1.0",
     "eslint": "2.11.1",
-    "mocha": "2.5.3"
+    "mocha": "2.5.3",
+    "rollup": "0.31.2",
+    "rollup-plugin-babel": "2.5.1"
   },
   "engines": {
     "node": ">= 4.0.0"
