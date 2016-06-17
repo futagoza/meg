@@ -35,7 +35,8 @@
     "watch": "npm run watch:es5 && npm run watch:es6",
     "watch:es5": "rollup -w --environment es5 -c",
     "watch:es6": "rollup -w --environment es6 -c",
-    "test": "mocha",
+    "test": "mocha --compilers js:babel-register",
+    "test:es6": "mocha",
     "prepublish": "npm run lint && npm test"
   },
   "devDependencies": {
