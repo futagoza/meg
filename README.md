@@ -19,7 +19,7 @@ Meg is a meta language with macros defined by a PEG based syntax and language-in
 
 # install
 
-Both of these methods require Node 4+ installed on your system.
+All of these methods require Node 4+ installed on your system.
 
 ###### to use as a command line tool
 
@@ -27,10 +27,18 @@ Both of these methods require Node 4+ installed on your system.
   npm install -g meg
   ```
 
-###### to use as a node.js module
+###### to use as a Node.js module
 
   ```shell
   npm install --save-dev meg
+  ```
+
+###### development version, via GIT and NPM
+
+  ```shell
+  git clone https://github.com/futagoza/meg.git
+  cd meg
+  npm install
   ```
 
 # license
