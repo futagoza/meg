@@ -15,15 +15,13 @@
     "ecmascript",
     "nodejs"
   ],
-  "homepage": "https://github.com/futagoza/meg",
   "repository": "futagoza/meg",
   "bugs": "https://github.com/futagoza/meg/issues",
   "license": "MIT",
-  "author": "Futago-za Ryuu <futagoza.ryuu@gmail.com>",
-
+  "author": "Futago-za Ryuu",
   "main": "index.js",
   "browser": "dist/meg-umd-es5.js",
-  "jsnext:main": "dist/meg-src-es6.js",
+  "module": "dist/meg-src-es6.js",
   "bin": "bin/meg.js",
   "scripts": {
     "lint": "eslint --cache . lib test",
