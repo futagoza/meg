@@ -24,10 +24,10 @@
   "main": "index.js",
   "browser": "dist/meg-umd-es5.js",
   "jsnext:main": "dist/meg-src-es6.js",
-  "bin": "bin/meg",
+  "bin": "bin/meg.js",
   "scripts": {
-    "lint": "eslint lib test",
-    "clean": "rimraf dist/*.js",
+    "lint": "eslint --cache . lib test",
+    "clean": "rimraf .eslintcache dist/*.js",
     "prebuild": "npm run lint && npm run clean",
     "build": "npm run build:es5 && npm run build:es6",
     "build:es5": "rollup --environment es5 -c",
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "eslint": "3.17.1",
+    "eslint-config-mdcs": "4.2.2",
     "babel-eslint": "7.1.1",
     "rimraf": "2.6.1",
     "babel-register": "6.23.0",
