@@ -1,3 +1,11 @@
+[![Build status](https://img.shields.io/travis/futagoza/meg.svg)](https://travis-ci.org/futagoza/meg)
+[![npm version](https://img.shields.io/npm/v/meg.svg)](https://www.npmjs.com/package/meg)
+[![dependencies](https://img.shields.io/david/futagoza/meg.svg)](https://david-dm.org/futagoza/meg)
+[![devDependencies](https://img.shields.io/david/dev/futagoza/meg.svg)](https://david-dm.org/futagoza/meg#info=devDependencies)
+[![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
+
+# about meg
+
 Meg is a meta language with macros defined by a PEG based syntax and language-independent operations.
 
 # features
