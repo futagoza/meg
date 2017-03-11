@@ -10,6 +10,7 @@ var include = require( 'rollup-plugin-includepaths' )
 var json = require( 'rollup-plugin-json' )
 var buble = require( 'rollup-plugin-buble' )
 var readFile = require( 'fs' ).readFileSync
+var join = require( 'path' ).join
 
 /*--------- 2) Options and data ---------*/
 
@@ -25,6 +26,12 @@ var config = {
   buble: { exclude: 'node_modules/**' },
 
   include: {
+
+    include: {
+
+      'meg/package.json': join( __dirname, '..', 'package.json' )
+
+    },
 
     external: [].concat(
 
