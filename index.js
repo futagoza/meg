@@ -1,28 +1,11 @@
-'use strict';
+'use strict'
 
-var meg
+module.exports = require(
 
-function tryRequire ( module, tryBabel ) {
-  try {
-    if ( !meg ) {
+  process.version.split( '.' )[ 0 ].charAt( 1 ) < 6
 
-      if ( tryBabel ) {
-        require('babel-register')
-      }
+    ? './dist/meg.es5-umd.js'
 
-      meg = require(module)
-      
-    }
-  } catch ( e ) {}
-}
+    : './dist/meg.source-umd.js'
 
-tryRequire('./dist/meg-umd-es6.js')
-tryRequire('./dist/meg-umd-es5.js')
-tryRequire('./dist/meg-src-es6.js', true)
-tryRequire('./lib/meg.js', true)
-
-if ( typeof meg === 'undefined' ) {
-  throw new Error('unable to find (or require) entry for Meg')
-}
-
-module.exports = meg
+)

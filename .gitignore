@@ -1,3 +1,5 @@
+/examples/**/output
 /node_modules
+/test/fixtures/**/output
 /.eslintcache
 /npm-debug.log

@@ -3,7 +3,6 @@
 module.exports = {
 
   'extends': 'mdcs',
-  'parser': 'babel-eslint',
 
   'rules': {
 

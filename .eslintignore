@@ -1,0 +1,3 @@
+dist/meg.*
+test/spec.*
+node_modules

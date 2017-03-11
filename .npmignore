@@ -1,0 +1,6 @@
+**/.eslintrc.js
+bin/rollup.js
+examples/**/output
+src
+test
+.eslintcache

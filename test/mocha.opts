@@ -1,4 +1,0 @@
---ui qunit
---reporter test/utils/spec2.js
---timeout 25000
---recursive
